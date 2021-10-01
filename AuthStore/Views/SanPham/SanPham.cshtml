@@ -15,7 +15,7 @@
         {
             <div class="col-md-4 bottom-cd simpleCart_shelfItem">
                 <div class="product-at ">
-                    <a href="@Url.Action("XemChiTiet","SanPham", new { @id = item.MaSP})">
+                    <a href="@Url.RouteUrl("XemChiTiet", new{ @id = item.MaSP, @tensp = item.TenSP})">
                         <img class="img-responsive" src="@Url.Content("~/Content/images/product/"+item.HinhAnh+".jpg")" alt="">
                         <div class="pro-grid">
                             <span class="buy-in">Buy Now</span>
