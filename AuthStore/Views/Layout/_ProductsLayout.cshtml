@@ -5,11 +5,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AuthStore - Make Your Day !</title>
+    <title>AuthStore</title>
     <link href="@Url.Content("~/Content/css/bootstrap.css")" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="@Url.Content("~/Content/js/jquery.min.js")"></script>
-    <script src="@Url.Content("~/Content/js/reg.js")"></script>
     <!-- Custom Theme files -->
     <!--theme-style-->
     <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" type="text/css" media="all" />
@@ -20,24 +19,47 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-    <!--//fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'><!--//fonts-->
     <!-- start menu -->
     <link href="@Url.Content("~/Content/css/memenu.css")" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="@Url.Content("~/Content/js/memenu.js")"></script>
     <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
     <script src="@Url.Content("~/Content/js/simpleCart.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/jquery-1.10.2.js")"></script>
-    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")"></script>
 
 </head>
 <body>
     <!--header-->
     <div class="header">
         <div class="header-top">
-            @Html.Action("HeaderTopPartial", "Home")
+            <div class="container">
+                <div class="search">
+                    <form>
+                        <input type="text" value="" placeholder="Tìm kiếm sản phẩm" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                        <input type="submit" value="🔍">
+                    </form>
+                </div>
+                <div class="header-left">
+                    <ul>
+                        <li><a href="">Đăng Nhập</a></li>
+                        <li><a href="register.html">Đăng Ký</a></li>
+
+                    </ul>
+                    <div class="cart box_1">
+                        <a href="checkout.html">
+                            <h3>
+                                <img src="@Url.Content("~/Content/images/cart.png")" alt="" />
+                                <div class="total news-total">
+                                    <span id="simpleCart_quantity" class="simpleCart_quantity new-quantity"></span>
+                                </div>
+
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
         </div>
         <div class="container">
             <div class="head-top">
@@ -105,35 +127,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
                 <!---->
-
                 <div class="product-bottom">
                     <div class="of-left-in">
-                        <h3 class="best">Bán chạy nhất</h3>
+                        <h3 class="best">Best Sellers</h3>
                     </div>
-                    @foreach (var item in Model.Take(3)) // vì sao lại gọi là 1 cái model luôn, thì vì h nó là để dùng chung nên có thể có nhiều cái biến nó truyền vào thì dùng cái này
-                                                        // ví dụ mà có 3 loại sản phẩm thì cũng đều có thể show cả temple này mà ko chỉnh sửa lại biến, kiểu cái này nó gọi như 1 cái nút cổ chai, nhiều nguồn dữ liệu dùng chung
-                                                        //đây thì nó sẽ lấy 3 sản phẩm trong cái lstHDXM để truy vấn
-                    {
-                        <div class="product-go">
-                            <div class=" fashion-grid">
-                                <a href="#"><img class="img-responsive " src="@Url.Content("~/Content/images/product/"+item.HinhAnh+".jpg")" alt=""></a>
-                            </div>
-                            <div class=" fashion-grid1">
-                                <h6 class="best2">
-                                    <a href="#">
-                                       @item.MoTa
-                                    </a>
-                                </h6>
-                                <span class=" price-in1">@item.DonGia</span>
-                            </div>
-                            <div class="clearfix"> </div>
+                    <div class="product-go">
+                        <div class=" fashion-grid">
+                            <a href="#"><img class="img-responsive " src="images/p1.jpg" alt=""></a>
+
                         </div>
-                    }
+                        <div class=" fashion-grid1">
+                            <h6 class="best2">
+                                <a href="#">
+                                    Lorem ipsum dolor sit
+                                    amet consectetuer
+                                </a>
+                            </h6>
+
+                            <span class=" price-in1"> $40.00</span>
+                        </div>
+
+                        <div class="clearfix"> </div>
                     </div>
-           @*disscount*@ 
+                    <div class="product-go">
+                        <div class=" fashion-grid">
+                            <a href="#"><img class="img-responsive " src="images/p2.jpg" alt=""></a>
+
+                        </div>
+                        <div class="fashion-grid1">
+                            <h6 class="best2">
+                                <a href="#">
+                                    Lorem ipsum dolor sit
+                                    amet consectetuer
+                                </a>
+                            </h6>
+
+                            <span class=" price-in1"> $40.00</span>
+                        </div>
+
+                        <div class="clearfix"> </div>
+                    </div>
+
+                </div>
                 <div class=" per1">
                     <a href="#">
-                        <img class="img-responsive" src="@Url.Content("~/Content/images/product/bacninh (1).jpg")" alt="">
+                        <img class="img-responsive" src="images/pro.jpg" alt="">
                         <div class="six1">
                             <h4>DISCOUNT</h4>
                             <p>Up to</p>

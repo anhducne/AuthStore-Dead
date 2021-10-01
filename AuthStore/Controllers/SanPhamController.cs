@@ -26,7 +26,7 @@ namespace AuthStore.Controllers
      
 
         // xây dựng trang xem chi tiết 
-        public ActionResult XemChiTiet (int? id, string tensp)
+        public ActionResult XemChiTiet (int? id)
         {
 
             // Kiểm tra tham số truyền vào có rỗng hay không

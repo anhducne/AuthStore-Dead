@@ -1,19 +1,12 @@
 .memenu{margin-bottom:0px;padding:0;width:100%;list-style:none;display:inline-block;position:relative;font-size:15px}
 .memenu li{margin-bottom:-5px;display:inline}
-	.memenu > li > a {
-		font-family: 'Quicksand', sans-serif !important;
-		left;
-		padding: 42px 20px 40px 20px;
-		text-decoration: none;
-		text-transform: capitalize;
-		font-size: 1em;
-		font-weight: bold;
-		-webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-		border-radius:2px;
-	}
+.memenu>li>a{ font-family: 'Segoe UI' ;left;padding:41px 25px 39px 25px;text-decoration:none;text-transform:capitalize;font-size:1em; font-weight: bold; -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	
+
+}
 .memenu>li.active>a{color:#00405d;}
 .memenu>li.right{float:right}
 .memenu .dropdown,.memenu .dropdown li .dropdown{list-style:none;margin:0;padding:0;display:none;position:absolute;z-index:999;width:160px;border:solid 1px rgba(0,0,0,0.1);background:#fff}
@@ -23,21 +16,7 @@
 .memenu .dropdown li:last-child{border-bottom:0}
 .memenu .dropdown li a{float:left;width:100%;padding:10px 25px;text-decoration:none;display:block;border:0 none;font-size:14px;color:#444;background:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;transition:color .4s ease-in-out;-moz-transition:color .4s ease-in-out;-webkit-transition:color .4s ease-in-out;-o-transition:color .4s ease-in-out}
 .memenu .dropdown li:hover>a{background:#dbdbdb}
-	.memenu > li > .mepanel {
-		position: absolute;
-		display: none;
-		background: #ffffff;
-		box-shadow: 0px 2px 4px #777;
-		width: 100.2%;
-		top: 59px;
-		left: -1px;
-		z-index: 99;
-		border-radius: 20px;
-		padding: 20px 30px 20px;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box
-	}
+.memenu>li>.mepanel{position:absolute;display:none;background:#ffffff;box-shadow: 0px 2px 4px #777; width:100.2%;top:59px;left:-1px;z-index:99;padding:20px 30px 20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .memenu .mepanel ul{margin:0;padding:0}
 .memenu .mepanel img{width:100%;border:solid 1px #dedede;cursor:pointer;-webkit-transition:border .3s linear;-moz-transition:border .3s linear;-o-transition:border .3s linear;transition:border .3s linear}.memenu .mepanel img:hover{border:solid 1px #777}.memenu form.contact input,.memenu form.contact textarea{font-family:Calibri,Arial;font-size:16px;color:#444;outline:0}
 .memenu form.contact input[type="text"],
@@ -64,10 +43,9 @@
 .skyblue,.skyblue>li.showhide{
 }
 .memenu>li.active>a {
-color: #fff;
-font-weight:800;
+color: darkslategrey;
 }	
-.skyblue li>a,.skyblue>li.showhide span{color:#FFFFFF}
+.skyblue li>a,.skyblue>li.showhide span{color:#000}
 .skyblue>li:hover>a,.skyblue .dropdown li:hover>a{color:#555; background:#ffffff;}.
 skyblue .mepanel img:hover,.skyblue form.contact input[type="text"]:focus,.skyblue form.contact textarea:focus{}
 .skyblue form.contact input[type="submit"]{background:#00405d;text-transform:uppercase;}
@@ -139,28 +117,28 @@ skyblue .mepanel img:hover,.skyblue form.contact input[type="text"]:focus,.skybl
 /* start memenu colors */
 
 .skyblue li a.color1:hover {
-	background-color: black;
-	color: #D7707E;
+	background-color: darkslategrey;
+	color: #ffffff;
 }
 .skyblue li a.color2:hover {
-	background-color: black;
-	color: #D7707E;
+	background-color: darkslategrey;
+	color: #ffffff;
 }
 .skyblue li a.color3:hover {
-	background-color: black;
-	color: #D7707E;
+	background-color: darkslategrey;
+	color: #ffffff;
 }
 .skyblue li a.color4:hover {
-	background-color: black;
-	color: #D7707E;
+	background-color: darkslategrey;
+	color: #ffffff;
 }
 
 .skyblue li a.color6:hover {
-	background-color: black;
-	color: #D7707E;
+	background-color: darkslategrey;
+	color: #ffffff;
 }
 
 .skyblue li a.color8:hover {
-	background-color: black;
-	color: #D7707E;
+	background-color: darkslategrey;
+	color: #ffffff;
 }	

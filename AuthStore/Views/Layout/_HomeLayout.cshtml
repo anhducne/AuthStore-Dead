@@ -2,12 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AuthStore - Make Your Day !</title>
+    <title>AuthStore</title>
     <link href="@Url.Content("~/Content/css/bootstrap.css")" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="@Url.Content("~/Content/js/jquery.min.js")"></script>
-    <script src="@Url.Content("~/Content/js/reg.js")"></script>
-
     <!-- Custom Theme files -->
     <!--theme-style-->
     <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" type="text/css" media="all" />
@@ -18,37 +16,30 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-    <!--//fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'><!--//fonts-->
     <!-- start menu -->
     <link href="@Url.Content("~/Content/css/memenu.css")" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="@Url.Content("~/Content/js/memenu.js")"></script>
-    <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+    <script>$(document).ready(function(){$(".memenu").memenu();});</script>
     <script src="@Url.Content("~/Content/js/simpleCart.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/jquery-1.10.2.js")"></script>
-    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")"></script>
-
 
 </head>
 <body>
     <!--header-->
     <div class="header">
-
         <div class="header-top">
-            @Html.Action("HeaderTopPartial", "Home")
-            @*<div class="container">
+            <div class="container">
                 <div class="search">
                     <form>
-                        <input type="text" value="" placeholder="Nhập gì đó đi" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-                        <input type="submit" value="Tìm kiếm">
+                        <input type="text" value="" placeholder="Tìm kiếm sản phẩm" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                        <input type="submit" value="🔍">
                     </form>
                 </div>
                 <div class="header-left">
                     <ul>
                         <li><a href="login.html">Đăng Nhập</a></li>
-                        <li><a href="@Url.Action("DangKy","Home")">Đăng Ký</a></li>
+                        <li><a href="register.html">Đăng Ký</a></li>
 
                     </ul>
                     <div class="cart box_1">
@@ -56,7 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <h3>
                                 <img src="@Url.Content("~/Content/images/cart.png")" alt="" />
                                 <div class="total news-total">
-                                   <span id="simpleCart_quantity" class="simpleCart_quantity new-quantity"> </span>
+                                   <span id="simpleCart_quantity" class="simpleCart_quantity new-quantity"></span>
                                 </div>
 
                             </h3>
@@ -65,9 +56,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="clearfix"> </div>
                 </div>
                 <div class="clearfix"> </div>
-            </div>*@
+            </div>
         </div>
-
         <div class="container">
             <div class="head-top">
                 <div class="logo">
